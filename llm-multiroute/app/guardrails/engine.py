@@ -18,7 +18,7 @@ from app.monitoring import metrics_store
 
 T = TypeVar("T", bound=BaseModel)
 
-# Maps a validator's class name (as it appears in ValidationSummary.validator_name)
+# Maps a validator's class name (as it appear in ValidationSummary.validator_name)
 # to the safety event category recorded in metrics_store
 _CATEGORY_BY_VALIDATOR = {
     "PromptInjectionDetector": "prompt_injection",

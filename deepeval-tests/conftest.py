@@ -11,6 +11,7 @@ os.environ.setdefault("DEEPEVAL_PER_ATTEMPT_TIMEOUT_SECONDS_OVERRIDE", "600")
 import re
 
 import pytest
+
 from deepeval.metrics import GEval
 from deepeval.models import OllamaModel
 from deepeval.models.llms.ollama_model import retry_ollama

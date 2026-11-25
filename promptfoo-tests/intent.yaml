@@ -11,6 +11,7 @@ providers:
       body:
         text: '{{text}}'
       transformResponse: 'JSON.stringify(json)'
+      
 
 prompts:
   - '{{text}}'

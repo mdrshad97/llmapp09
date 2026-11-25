@@ -15,6 +15,7 @@ def index():
 def proxy_analysis(analysis_type):
     allowed_types = ('summarize', 'sentiment', 'intent', 'classify')
     if analysis_type not in allowed_types:
+        
         return jsonify({'error': f'Invalid analysis type: {analysis_type}'}), 400
 
     try:
